@@ -2,21 +2,20 @@ import Foundation
 
 class EscapingSample {
   var closure = { () -> () in print("good") }
-//  var closure2: () -> Void
   
   func sample1(with completion: @escaping (() -> Void)) {
-    closure = completion // スコープ外のプロパティに代入 → コンパイルエラー
+    closure = completion
   }
   
   func sample2(with completion: @escaping (() -> Void)) {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-      completion() // 非同期処理内での実行はスコープ外 → コンパイルエラー
+      completion()
     }
   }
   
   func sample3(with completion: @escaping (() -> Void)) {
     runAsyncTask {
-      completion() // 非同期処理内での実行はスコープ外 → コンパイルエラー
+      completion()
     }
   }
   
