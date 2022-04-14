@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057F14AD2807197E004F11A3 /* CustomPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F14AC2807197E004F11A3 /* CustomPropertyView.swift */; };
 		058909A128030B4F008F495A /* GenericsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058909A028030B4F008F495A /* GenericsSampleApp.swift */; };
 		058909A328030B4F008F495A /* ViewBuilderSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058909A228030B4F008F495A /* ViewBuilderSampleView.swift */; };
 		058909A528030B50008F495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058909A428030B50008F495A /* Assets.xcassets */; };
@@ -16,6 +17,9 @@
 
 /* Begin PBXFileReference section */
 		057F14A4280468D6004F11A3 /* EscapingPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EscapingPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		057F14A72804791F004F11A3 /* LazyStoredPropertyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LazyStoredPropertyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		057F14AB2805F30A004F11A3 /* PropertyWrapper.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PropertyWrapper.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		057F14AC2807197E004F11A3 /* CustomPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPropertyView.swift; sourceTree = "<group>"; };
 		0589099D28030B4F008F495A /* GenericsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		058909A028030B4F008F495A /* GenericsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsSampleApp.swift; sourceTree = "<group>"; };
 		058909A228030B4F008F495A /* ViewBuilderSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderSampleView.swift; sourceTree = "<group>"; };
@@ -44,9 +48,28 @@
 			path = Initilize;
 			sourceTree = "<group>";
 		};
+		057F14A628047886004F11A3 /* LazyStoredProperty */ = {
+			isa = PBXGroup;
+			children = (
+				057F14A72804791F004F11A3 /* LazyStoredPropertyPlayground.playground */,
+			);
+			path = LazyStoredProperty;
+			sourceTree = "<group>";
+		};
+		057F14A82805BFF9004F11A3 /* PropertyWrraper */ = {
+			isa = PBXGroup;
+			children = (
+				057F14AB2805F30A004F11A3 /* PropertyWrapper.playground */,
+				057F14AC2807197E004F11A3 /* CustomPropertyView.swift */,
+			);
+			path = PropertyWrraper;
+			sourceTree = "<group>";
+		};
 		0589099428030B4F008F495A = {
 			isa = PBXGroup;
 			children = (
+				057F14A82805BFF9004F11A3 /* PropertyWrraper */,
+				057F14A628047886004F11A3 /* LazyStoredProperty */,
 				057F14A528046954004F11A3 /* Initilize */,
 				0589099F28030B4F008F495A /* GenericsSample */,
 				058909BA28046863008F495A /* Escaping */,
@@ -170,6 +193,7 @@
 			files = (
 				058909A328030B4F008F495A /* ViewBuilderSampleView.swift in Sources */,
 				058909B12803382F008F495A /* EscapingSample.swift in Sources */,
+				057F14AD2807197E004F11A3 /* CustomPropertyView.swift in Sources */,
 				058909A128030B4F008F495A /* GenericsSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

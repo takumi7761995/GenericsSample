@@ -1,8 +1,6 @@
-import UIKit
 import Foundation
 
-
-struct InitilizeSampleView {
+struct InitilizeSample {
   let a: Int       // must
   let b: Int = 0   // 0
   let c: Int?      // must
@@ -19,8 +17,8 @@ struct InitilizeSampleView {
   var j: Int? { return 0 } // computed
 }
 
-let sample1 = InitilizeSampleView(a: 1, c: 1, e: 1)
-let sample2 = InitilizeSampleView(a: 1, c: 1, e: 1, f: 1, g: 1, h: 1)
+let sample1 = InitilizeSample(a: 1, c: 1, e: 1)
+let sample2 = InitilizeSample(a: 1, c: 1, e: 1, f: 1, g: 1, h: 1)
 
 print(sample1)
 print(sample2)
