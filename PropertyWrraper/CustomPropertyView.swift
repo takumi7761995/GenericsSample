@@ -4,6 +4,7 @@
 //
 //
 
+// ビルドしないとアラート出ません
 import SwiftUI
 
 struct CustomPropertyView: View {
